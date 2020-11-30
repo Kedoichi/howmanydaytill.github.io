@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.3rem;
+}
+
+body .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .countdown .number {
+  font-size: 6rem;
+  line-height: 1.5rem;
+  margin: 3rem 2.5rem;
+}
+
+body .countdown .cd-title {
+  text-align: center;
+}
+
+body .countdown .cd-title span {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

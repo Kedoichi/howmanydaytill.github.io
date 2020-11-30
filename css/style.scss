@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  //background-image: url(https://images.unsplash.com/photo-1563303313-93627cc2a1aa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.3rem;
+  }
+
+  .countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .number{
+      font-size: 6rem;
+      line-height: 1.5rem;
+      margin: 3rem 2.5rem;
+    }
+    .cd-title{
+     text-align: center;
+     span{
+       font-weight: lighter;
+       font-size: 1.5rem;
+     }
+    }
+
+  }
+
+}
