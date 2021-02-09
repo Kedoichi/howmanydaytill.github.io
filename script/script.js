@@ -13,8 +13,6 @@ function countdown() {
   const min = Math.floor(totalSec / 60) % 60;
   const sec = Math.floor(totalSec) % 60;
 
-  console.log(day, hour, min, sec);
-
   dayCD.innerHTML = formatTime(day);
   hourCD.innerHTML = formatTime(hour);
   minCD.innerHTML = formatTime(min);
@@ -25,9 +23,11 @@ function formatTime(time) {
   return time < 10 ? `0${time}` : time;
 }
 function getdate() {
-  return document.getElementById("myDate").value;
+  var date = document.getElementById("myDate").value,
+    time = document.getElementById("myTime").value;
+  return new Date(date + " " + time);
 }
-function myFunction() {
+function mainFunction() {
   const newYearDate = new Date(getdate());
   const currentDate = new Date();
 
@@ -35,11 +35,8 @@ function myFunction() {
     document.getElementById("msg").innerHTML = "Try another day mate";
   } else {
     countdown();
-    setInterval(countdown, 1000)
+    setInterval(countdown, 1000);
     document.getElementById("msg").innerHTML = "UwU";
   }
 }
-function setvalue() {
-  document.getElementById("demo").innerHTML = Date() + 1;
-}
-setvalue();
+
